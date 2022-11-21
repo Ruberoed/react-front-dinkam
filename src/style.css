@@ -1,0 +1,391 @@
+/* header and global styles */
+
+* {
+    margin: auto;
+    padding: 0;
+    font-size: 10px;
+    color: #000000;
+    font-family: 'Russo One', sans-serif;
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+
+.container {
+    background-image: url('../src/images/project.jpg'); 
+    /* background-color: #808080; */
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    height: 100%
+        /* z-index: ; */
+}
+
+body {
+    /* background-image: url('../src/images/bg.gif'); */
+    font-family: 'Russo One', sans-serif;
+    font-weight: normal;
+}
+
+.container table {
+    white-space: 10px;
+}
+
+.itemContent {
+    margin-top: -200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 800px;
+    background-size: 1000px;
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-image: url('./images/item\ texture.png');
+}
+
+.cardBox {
+    width: 100px;
+}
+
+.fullImage {
+    margin-top: 260px;
+    margin-left: -450px;
+    width: 380px;
+    position: absolute;
+}
+
+button.slick-next::before {
+    content: none;
+}
+
+button.slick-prev::before {
+    content: none;
+}
+
+.slick-next{
+    margin-right: -10px
+}
+
+
+.slick-prev{
+    margin-left: -20px;
+}
+
+button.slick-next.slick-arrow{
+    font-size: 0;
+    background: no-repeat url('../src/images/вправо.png');
+    background-position-y: center;
+    background-size: 50px;
+    width: 40px;
+    height: 40px;
+    content: unset;
+}
+
+button.slick-prev.slick-arrow{
+    font-size: 0;
+    background: no-repeat url('../src/images/влево.png');
+    background-position-y: center;
+    background-size: 50px;
+    width: 40px;
+    height: 40px;
+    content: unset;
+}
+
+.ImgSlider {
+    height: 10px;
+    margin-top: 600px;
+    margin-left: -390px;
+    width: 270px;
+    position: absolute;
+}
+
+section {
+    margin-top: 50px;
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    grid: 270px 270px / repeat(3, 270px);
+}
+
+.table {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-columns: 3;
+    display: contents;
+}
+
+
+.container {
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
+.AddToCart{
+    border: 3;
+}
+
+.item {
+    width: 200px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.item:hover {
+    filter: brightness(1.5);
+}
+
+.colorItem {
+    font-weight: 400;
+    font-size: 11px;
+    margin-top: 0;
+}
+
+.titleItem {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.RightTexture {
+    margin-top: 320px;
+    position: absolute;
+    margin-left: 120px;
+}
+
+.SelectSize{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 17px;
+    width: 70px;
+    height: 30px;
+    border-image: none ;
+    border-width: 5px;
+    border-color: #a1cefd;
+    background-color: white;
+    border-radius: 23px;
+
+}
+
+.SelectSize:focus-visible{
+    outline-color: #9ba9e5;
+}
+
+.priceItem {
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+
+.header {
+    /* background-image: url('../src/images/headerrr.png'); */
+    /* background-repeat: no-repeat; */
+    /* background-size:contain; */
+    /* position: fixed; */
+    top: 0;
+    height: 30px;
+    width: 100%;
+    z-index: 2;
+}
+
+.TTTT td {
+    height: 20px;
+}
+
+.hov:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.changeLang:focus-visible {
+    outline: none;
+}
+
+.changeLang {
+    border-radius: 3.7px;
+    border: none;
+    font-size: 10px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.btnSign:after {
+    font-family: 'Russo One', sans-serif;
+    content: 'Sign in';
+}
+
+.btnLogIn:after {
+    font-family: 'Russo One', sans-serif;
+    content: 'Log in';
+}
+
+.btnCart:after {
+    font-family: 'Russo One', sans-serif;
+    content: 'Cart';
+}
+
+
+/* Cart styles */
+
+.box {
+
+    align-items: flex;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top:; */
+    width: 700px;
+}
+
+.verticalContent {
+    display: flex;
+    width: 100%;
+}
+
+/* Footer styles */
+
+.head {
+    display: grid;
+    justify-content: center;
+    vertical-align: top;
+    align-items: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+.CustommerSup {
+    line-height: 20px;
+}
+
+.SendMailBlock {
+    vertical-align: text-bottom;
+}
+
+.SendMailDiv {
+    margin-top: 7px;
+    position: 'absolute';
+}
+
+.SendMailInput {
+    margin-top: 13px;
+    border-width: 0px;
+    font-size: 10px;
+    width: 150px;
+    height: 20px;
+    border-radius: 3.7px;
+    font-family: 'Russo One';
+    line-height: 13px;
+    height: 20px;
+}
+
+.SendmMailBtn {
+    padding-top: 1px;
+    background-color: #a1cefd;
+    padding-bottom: 1px;
+    margin-left: 2px;
+    border: none;
+    background-color: '#9f9f9f';
+    font-size: 10px;
+    font-family: 'Russo One';
+    border-radius: 3.7px;
+    width: 80px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.head tr td {
+    text-align: left;
+    width: 300px;
+}
+
+
+/* register & auth styles */
+
+
+.Inputs {
+    display: table-caption;
+    font-family: 'Russo One';
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.InputsReg{
+    padding: 30px;
+}
+
+.UsernameInput {
+    border: none;
+    height: 20px;
+    width: 180px;
+    border-radius: 3.7px;
+    font-family: 'Russo One';
+}
+
+.MailInput {
+    /* /* border: none; */
+    margin-top: 7px;
+    height: 20px;
+    width: 180px;
+    /* border-radius: 3.7px;*/
+    /* font-family: 'Russo One';
+    background-color: #b6b6b6  */
+}
+
+.SendFormReg::after {
+    content: 'Log in';
+}
+
+.SendFormReg {
+    margin-top: 10px;
+    margin-right: 60px;
+    background-color: #a1cefd;
+    border: none;
+    background-color: '#9f9f9f';
+    font-size: 15px;
+    font-family: 'Russo One';
+    border-radius: 3.7px;
+    width: 120px;
+    height: 25px;
+
+}
+
+.ForgotPass {
+    margin-top: 10px;
+    margin-right: 85px;
+}
+
+
+/* MODAL WINDOW STYLES */
+
+.modal {
+    font-size: 12px;
+}
+
+.modal>.content {
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 5px;
+    background-color: white;
+
+}
+
+.popup-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal>.close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    font-size: 24px;
+    background: none;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+}
